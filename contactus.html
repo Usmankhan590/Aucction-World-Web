@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html  ng-app="mod" ng-controller="hlo" lang="en">
+
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/06a786625d.js" crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!-------Angular js ------->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-------Angular file------->
+    <script src="angular.js"></script>
+
+    <title>Hi</title>
+
+
+
+</head>
+
+<body>
+    <!------navbar----->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">
+            <h4 class="attock2">Aucction World</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mr-5 attock2" href="Main page.html">HOME<span class="sr-only">(current)</span></a>
+                </li>
+               
+                <li class="nav-item">
+                    <!-- <a class="nav-link mr-5 attock2" href="shop.html">SHOP</a> -->
+                </li>
+                
+                <li class="nav-item dropdown menu-area">
+                    <a class="nav-link dropdown-toggle mr-5 attock2" href="#" id="mega-Two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                OUR CATEGORIES
+              </a>
+              <div class="dropdown-menu mega-ares" aria-labelledby="mega-Two">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-sm-6 col-lg-3">
+                              <div class="container">
+                                  <div class="attock"> </div>
+                                  <img src="pic1/Q70.jpg" height="250px"  width="150px" 
+                               class="card-img-top attock1" alt="...">
+                             </div>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                             <h5 style="color:#0c08ff;">FURNITURE</h5>
+                             <a href="All chairs page.html" class="dropdown-item">CHAIRS</a>
+                             <a href="All table page .html" class="dropdown-item">TABLES</a>
+                             <a href="all sofa caterigor.html" class="dropdown-item">SOFAS</a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                             <h5 style="color:#0c08ff;">ELECTRONICS</h5>
+                             <a href="All cpu page.html" class="dropdown-item">CPU</a>
+                             <a href="all lcd page.html" class="dropdown-item">LCD</a>
+                             <a href="laptops page.html" class="dropdown-item">LAPTOPS</a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                             <h5 style="color:#0c08ff;">HOME DECOR</h5>
+                             <a href="all clocks page .html" class="dropdown-item">WALL CLOCK</a>
+                             <a href="all pant page .html" class="dropdown-item">PAINTING</a>
+                             <a href="all jumar page .html" class="dropdown-item">JHUMARS</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+          </li>
+      </li>
+
+                    
+                   <li class="nav-item">
+                    <a class="nav-link mr-5 attock2" href="aboust.html">ABOUT US</a>
+                </li>  
+                  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5 attock2" href="contactus.html">CONTACT US</a>
+                </li>
+       
+            </li>
+            <li class="nav-item">
+
+
+                    <a class="nav-link attock2" href="#"><i class="fas fa-shopping-basket"></i>(0)</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    
+    <!------navbar end----->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form action="" method="post" id="fileForm" role="form">
+            <fieldset><legend class="text-center">Valid Information is required to register. <span class="req"></span></legend>
+
+            
+
+                <div class="form-group">     
+                <label for="firstname"><span class="req">* </span> First name: </label>
+                    <input class="form-control" type="text" name="firstname" id = "txt" onkeyup = "Validate(this)" required placeholder="Enter a First Name" /> 
+                        <div id="errFirst"></div>    
+            </div>
+ 
+            <div class="form-group">
+                <label for="lastname"><span class="req">* </span> Last name: </label> 
+                    <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="Enter a last Name" required />  
+                        <div id="errLast"></div>
+
+            <br>
+
+            <div class="form-group">
+            <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
+                    <input required type="text" name="Phone Number" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="Enter a Phone Number"/> 
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><span class="req">* </span> Email Address: </label> 
+                    <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" placeholder="Enter a Email Adress" />   
+                        <div class="status" id="status"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="username"><span class="req">* </span> User name:  <small>This will be your login user name</small> </label> 
+                    <input class="form-control" type="text" name="username" id = "txt" onkeyup = "Validate(this)" placeholder="Minimum 6 letters" required />  
+                        <div id="errLast"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password"><span class="req">* </span> Password: </label>
+                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" placeholder="Enter a Password" /> </p>
+
+                <label for="password"><span class="req">* </span> Password Confirm: </label>
+                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
+                        <span id="confirmMessage" class="confirmMessage"></span>
+            </div>
+
+            <div class="form-group">
+            
+                <?php //$date_entered = date('m/d/Y H:i:s'); ?>
+                <input type="hidden" value="<?php //echo $date_entered; ?>" name="dateregistered">
+                <input type="hidden" value="0" name="activate" />
+                <hr>
+
+                <input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="terms">I agree with the <a href="terms.php" title="You may read our terms and conditions by clicking on this link">terms and conditions</a> for Registration.</label><span class="req">* </span>
+            </div>
+
+            <div class="form-group">
+                <input class="btn btn-success" type="submit"name="submit_reg" onclick="show()"
+                 value="Register">
+            </div>
+                      <h5>You Will Receive An Email To Complete The Registration and Validation Process. </h5>
+                      
+                      <script >
+        
+                        function show(){
+                alert('YOUR REGESTRATION IS SUCCESSFUL')
+                
+                        }
+                        
+                        </script>
+
+            </fieldset>
+            </form><!-- ends register form -->
+
+<script type="text/javascript">
+  document.getElementById("field_terms").setCustomValidity("Please Indicate that you accept the Terms and Conditions");
+</script>
+        </div>
+
+    </div>
+</div>
+<script>
+    function checkPass()
+{
+    //Store the password field objects into variables ...
+    var pass1 = document.getElementById('pass1');
+    var pass2 = document.getElementById('pass2');
+    //Store the Confimation Message Object ...
+    var message = document.getElementById('confirmMessage');
+    //Set the colors we will be using ...
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+    //Compare the values in the password field 
+    //and the confirmation field
+    if(pass1.value == pass2.value){
+        //The passwords match. 
+        //Set the color to the good color and inform
+        //the user that they have entered the correct password 
+        pass2.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = "Passwords Match"
+    }else{
+        //The passwords do not match.
+        //Set the color to the bad color and
+        //notify the user.
+        pass2.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = "Passwords Do Not Match!"
+    }
+} 
+function validatephone(phone) 
+{
+    var maintainplus = '';
+    var numval = phone.value
+    if ( numval.charAt(0)=='+' )
+    {
+        var maintainplus = '';
+    }
+    curphonevar = numval.replace(/[\\A-Za-z!"£$%^&\,*+_={};:'@#~,.Š\/<>?|`¬\]\[]/g,'');
+    phone.value = maintainplus + curphonevar;
+    var maintainplus = '';
+    phone.focus;
+}
+// validates text only
+function Validate(txt) {
+    txt.value = txt.value.replace(/[^a-zA-Z-'\n\r.]+/g, '');
+}
+// validate email
+function email_validate(email)
+{
+var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
+
+    if(regMail.test(email) == false)
+    {
+    document.getElementById("status").innerHTML    = "<span class='warning'>Email address is not valid yet.</span>";
+    }
+    else
+    {
+    document.getElementById("status").innerHTML = "<span class='valid'>Thanks, you have entered a valid Email address!</span>"; 
+    }
+}
+// validate date of birth
+function dob_validate(dob)
+{
+var regDOB = /^(\d{1,2})[-\/](\d{1,2})[-\/](\d{4})$/;
+
+    if(regDOB.test(dob) == false)
+    {
+    document.getElementById("statusDOB").innerHTML  = "<span class='warning'>DOB is only used to verify your age.</span>";
+    }
+    else
+    {
+    document.getElementById("statusDOB").innerHTML  = "<span class='valid'>Thanks, you have entered a valid DOB!</span>";   
+    }
+}
+// validate address
+function add_validate(address)
+{
+var regAdd = /^(?=.*\d)[a-zA-Z\s\d\/]+$/;
+  
+    if(regAdd.test(address) == false)
+    {
+    document.getElementById("statusAdd").innerHTML  = "<span class='warning'>Address is not valid yet.</span>";
+    }
+    else
+    {
+    document.getElementById("statusAdd").innerHTML  = "<span class='valid'>Thanks, Address looks valid!</span>";    
+    }
+}
+
+</script>
+            </div>
+        </div>
+     </div>
+       <!------------FOOTER------------->
+
+<!--footer starts from here-->
+<footer class="footer">
+    <div class="container bottom_border">
+    <div class="row">
+    <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Details</h5>
+    <!--headin5_amrc-->
+    <p class="mb10">Auction software made easy. Timed and Webcast Auctions on your website. Timed and Webcast Auctions on your website. Live Auctions. Custom Styling. Complete Web Analytics. Features: Multi-Lingual, Live Auctions, Custom Styling,</p>
+    <p><i class="fa fa-location-arrow"></i> INFO</p>
+    <p><i class="fa fa-phone"></i>  +91- (021) 36620102 </p>
+    <p><i class="fa fa fa-envelope"></i> aptech@example.com</p>
+    
+    
+    </div>
+    
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    <p class="text-center">Copyright @1995 | Designed With by <a href="#">APTECH NORTH NAZIMABAD</a></p>
+    
+    <ul class="social_footer_ul">
+    <li><a href="https://play.google.com/store/apps/details?id=com.facebook.katana" ><i class= "fab fa-facebook"-></i></a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.twitter.android"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.instagram.android"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    <!--social_footer_ul ends here-->
+    </div>
+    
+    </footer>
+    
+        <!-- Optional JavaScript; choose one of the two! -->
+    
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        -->
+    </body>
+    
+    </html>

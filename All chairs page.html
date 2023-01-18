@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html  ng-app="mod" ng-controller="hlo" lang="en">
+
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fsit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/06a786625d.js" crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-------Angular js ------->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-------Angular file------->
+    <script src="angular.js"></script>
+    <!-----------fonts--------->
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chango&family=Ranchers&display=swap" rel="stylesheet">
+   <!------jquery----->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!------navbar----->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">
+            <h4 class="attock2">Aucction World</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mr-5 attock2" href="Main page.html">HOME <span class="sr-only">(current)</span></a>
+               
+               
+                <li class="nav-item dropdown menu-area">
+                    <a class="nav-link dropdown-toggle mr-5 attock2" href="" id="mega-Two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                OUR CATEGORIES
+              </a>
+                    <div class="dropdown-menu mega-ares" aria-labelledby="mega-Two">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="container">
+                                      <div class="attock" ></div>
+                                      <img src="pic1/Q70.jpg" height="250  "width=150 
+                                       ;" class="card-img-top attock1" alt="...">
+                                  </div>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">FURNITURE</h5>
+                                  <a href="All chairs page.html" class="dropdown-item">CHAIRS</a>
+                                  <a href="All table page .html" class="dropdown-item">TABLES</a>
+                                  <a href="all sofa caterigor.html" class="dropdown-item">SOFAS</a>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">ELECTRONICS</h5>
+                                  <a href="All cpu page.html" class="dropdown-item">CPU</a>
+                                  <a href="all lcd page.html" class="dropdown-item">LCD</a>
+                                  <a href="laptops page.html" class="dropdown-item">LAPTOPS</a>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">HOME DECOR</h5>
+                                  <a href="all clocks page .html" class="dropdown-item">WALL CLOCK</a>
+                                  <a href="all pant page .html" class="dropdown-item">PAINTING</a>
+                                  <a href="all jumar page .html" class="dropdown-item">JHUMARS</a>
+                              </div>
+                          </div>
+                      </div>
+                      <li class="nav-item">
+                        <a class="nav-link mr-5 attock2" href="aboust.html">About Us</a>
+                     
+                    <li class="nav-item">
+                        <a class="nav-link mr-5 attock2" href="contactus.html">Contact Us</a>
+                      </li>
+                  
+        </div>
+        </div>
+    </nav>
+    <br>
+    <!------navbar end----->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          
+            <li>
+                <img src="pic1/cc44.jpg" title="first img" height="300px" width="200px" />
+                
+            </li>
+            
+        </ul>
+    </div>
+        </div>
+        <div class="col-md-4">
+         <h3 style="font-family: 'Anton', sans-serif; display: inline; color: #DCCB39; text-decoration: underline solid black;">PRICE:</h3> <h1 style="font-family: 'Anton', sans-serif; display: inline; text-decoration: underline solid #DCCB39; margin: 10px;">$10000</h1>
+         <br>
+         <br>
+  <p style="font-weight: bold; color: #DCCB39;"><b> <p>Devoko Gaming Chair Racing Style High Back Computer Chair with Adjustable Armrests Ergonomic Office Chair Executive Swivel Task Chair with Headrest and Lumbar Support (Blue)</p>
+</p>
+<b>Furniture base movement	Swivel</b></h6> <h6><b>Room Type	Office</b></h6></h5>
+<b>Color	Blue</b></h6> <h6><b>Material	Leather</b></h6></h5>
+
+
+<h5 style="color: #DCCB39;"><b id="QTY">QTY</b>:<input style="width: 70px; margin: 5px; border-color: black;" type="number" name="" id="number"></h5>
+<button style="border-radius: 7%; height: 40px; width: 90px; color: brown; background-color: black;" onclick="show()">Bid</button>
+
+
+<h1>About this item</h1>
+
+<p>Ergonomic Design: Devoko ergonomic racing style gaming computer chair with removable headrest pillow, supportive lumbar pillow and adjustable armrest can help to relieve tired feeling and protect your neck and spinal for long time gaming or working.
+    Comfort Improvement: This gaming chair seating and back diamond-shaped cross pattern design strengthens the cushion's resistance to pressure and increases the load-bearing capacity, also increase the comfortable feeling when seating.
+    Multi-function: 360 degree swivel rotation with top quality Pu mute rolling Wheels. Avoid scratching on floor board. Adjustable backrest between 90 - 160 degrees suitable for finding your comfortable position.
+    Wide Applications: Devoko racing style gaming chair with durable PU leather which is a good choice for conquering your game world, dormitory studying and office working, also offering your leisure space more stability and mobility. Load Capacity: 330 LBS.
+    What We Offer: A new gaming chair. Complete installation tools. An installation instruction and our friendly customer service. Seating area dimension: 21 x 21.5 inches (L x W). Backrest dimension: 21 x 32.5 inches (L X H). Adjustable seat height: 16.5 - 21 inches..</p>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js/jqzoom.js"></script>
+<script type="text/javascript">
+$("#bzoom").zoom({
+  zoom_area_width: 300,
+    autoplay_interval :3000,
+    small_thumbs : 4,
+    autoplay : false
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+   $(document).ready(function(){
+     
+     $("#number").change(function(){
+      var price1=$("#price1").html();
+      var number=$("#number").val();
+      $("#price1").html(price1*number);
+     });
+     $("#hert1").click(function(){
+      $("#hert1").css("color", "red");
+     });
+     $("#add").click(function(){
+      $(this).addClass("active");
+     });
+    });
+</script>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html  ng-app="mod" ng-controller="hlo" lang="en">
+
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/06a786625d.js" crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-------Angular js ------->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-------Angular file------->
+    <script src="angular.js"></script>
+    <!-----------fonts--------->
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chango&family=Ranchers&display=swap" rel="stylesheet">
+   <!------jquery----->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mr-5 attock2" href="Main page.html">HOME <span class="sr-only">(current)</span></a>
+               
+               
+                <li class="nav-item dropdown menu-area">
+                    <a class="nav-link dropdown-toggle mr-5 attock2" href="Main page.html" id="mega-Two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                OUR CATEGORIES
+              </a>
+                    <div class="dropdown-menu mega-ares" aria-labelledby="mega-Two">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="container">
+                                      <div class="attock" ></div>
+                                      <img src="pic1/Q70.jpg" height="250  "width=150 
+                                       ;" class="card-img-top attock1" alt="...">
+                                  </div>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">FURNITURE</h5>
+                                  <a href="All chairs page.html" class="dropdown-item">CHAIRS</a>
+                                  <a href="All table page .html" class="dropdown-item">TABLES</a>
+                                  <a href="all sofa caterigor.html" class="dropdown-item">SOFAS</a>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">ELECTRONICS</h5>
+                                  <a href="All cpu page.html" class="dropdown-item">CPU</a>
+                                  <a href="all lcd page.html" class="dropdown-item">LCD</a>
+                                  <a href="laptops page.html" class="dropdown-item">LAPTOPS</a>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">HOME DECOR</h5>
+                                  <a href="all clocks page .html" class="dropdown-item">WALL CLOCK</a>
+                                  <a href="all pant page .html" class="dropdown-item">PAINTING</a>
+                                  <a href="all jumar page .html" class="dropdown-item">JHUMARS</a>
+                              </div>
+                          </div>
+                      </div>
+                      <li class="nav-item">
+                        <a class="nav-link mr-5 attock2" href="aboust.html">About Us</a>
+          
+                    <li class="nav-item">
+                        <!-- <a class="nav-link mr-5 attock2" href="Main page.html">Main Page</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-5 attock2" href="contactus.html">Contact Us</a>
+                      </li>
+                  
+        </div>
+        </div>
+    </nav>
+ <!------navbar end----->
+ <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        
+        
+              
+                <li>
+                    <img src="pic1/cc22.jpg" title="Secomd img" height="300px" width="200px" />
+                    
+                </li>
+                
+            </ul>
+        </div>
+        </div>
+        <div class="col-md-4">
+         <h3 style="font-family: 'Anton', sans-serif; display: inline; color: #DCCB39; text-decoration: underline solid black;">PRICE:</h3> <h1 style="font-family: 'Anton', sans-serif; display: inline; text-decoration: underline solid #DCCB39; margin: 10px;">$10000</h1>
+         <br>
+         <br>
+  <p style="font-weight: bold; color: #DCCB39;"><b> <p>Devoko Ergonomic Gaming Chair Racing Style Adjustable Height High Back PC Computer Chair with Headrest and Lumbar Support Executive Office Chair (Red)</p>
+</p>
+<b>Furniture base movement	Swivel</b></h6> <h6><b>Room :- Type :-Office</b></h6></h5>
+<b>Color :-	Red</b></h6> <h6><b>Material	Leather</b></h6></h5>
+
+
+<h5 style="color: #DCCB39;"><b id="QTY">QTY</b>:<input style="width: 70px; margin: 5px; border-color: black;" type="number" name="" id="number"></h5>
+<button style="border-radius: 7%; height: 40px; width: 90px; color: brown; background-color: black;" onclick="show()">Bid</button>
+
+
+<h1>About this item</h1>
+
+<p>Devoko high back ergonomic gaming chair covered by premium breathable leather and freely adjustable lumbar support & headrest pillow protecting your spinal & neck
+    360 degree swivel rotation with top quality mute rolling Wheels avoid scratching on floor board and freely move in your space
+    Heavy duty racing gaming chair with integrated metal frame, international standards explosion-proof gas Spring, Suitable for playing your computer games, watching TV, lying down rest and office working.
+    Easy lock-tilt adjustment with recline angle adjuster, relieve tired feeling and pressure during long gaming or working
+    What We offer: A new gaming chair, Complete installation tools, An installation instruction, Our Friendly after sale service. Load capacity: 300 LBS, Seating area Dimension: 19.8" x 20.5" (L X W), Backrest dimension: 19.8" x 30.5" (L X W), Adjustable seat height: 16.1"-20"</p>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js/jqzoom.js"></script>
+<script type="text/javascript">
+$("#bzoom").zoom({
+  zoom_area_width: 300,
+    autoplay_interval :3000,
+    small_thumbs : 4,
+    autoplay : false
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+   $(document).ready(function(){
+     
+     $("#number").change(function(){
+      var price1=$("#price1").html();
+      var number=$("#number").val();
+      $("#price1").html(price1*number);
+     });
+     $("#hert1").click(function(){
+      $("#hert1").css("color", "red");
+     });
+     $("#add").click(function(){
+      $(this).addClass("active");
+     });
+    });
+</script>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html  ng-app="mod" ng-controller="hlo" lang="en">
+
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/06a786625d.js" crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-------Angular js ------->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-------Angular file------->
+    <script src="angular.js"></script>
+    <!-----------fonts--------->
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chango&family=Ranchers&display=swap" rel="stylesheet">
+   <!------jquery----->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+   
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mr-5 attock2" href="Main page.html">HOME <span class="sr-only">(current)</span></a>
+               
+               
+                <li class="nav-item dropdown menu-area">
+                    <a class="nav-link dropdown-toggle mr-5 attock2" href="Main page.html" id="mega-Two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                        OUR CATEGORIES
+              </a>
+                    <div class="dropdown-menu mega-ares" aria-labelledby="mega-Two">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="container">
+                                      <div class="attock" ></div>
+                                      <img src="pic1/Q70.jpg" height="250  "width=150 
+                                       ;" class="card-img-top attock1" alt="...">
+                                  </div>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">FURNITURE</h5>
+                                  <a href="All chairs page.html" class="dropdown-item">CHAIRS</a>
+                                  <a href="All table page .html" class="dropdown-item">TABLES</a>
+                                  <a href="all sofa caterigor.html" class="dropdown-item">SOFAS</a>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">ELECTRONICS</h5>
+                                  <a href="All cpu page.html" class="dropdown-item">CPU</a>
+                                  <a href="all lcd page.html" class="dropdown-item">LCD</a>
+                                  <a href="laptops page.html" class="dropdown-item">LAPTOPS</a>
+                              </div>
+                              <div class="col-sm-6 col-lg-3">
+                                  <h5 style="color:#0c08ff;">HOME DECOR</h5>
+                                  <a href="all clocks page .html" class="dropdown-item">WALL CLOCK</a>
+                                  <a href="all pant page .html" class="dropdown-item">PAINTING</a>
+                                  <a href="all jumar page .html" class="dropdown-item">JHUMARS</a>
+                              </div>
+                          </div>
+                      </div>
+                      <li class="nav-item">
+                        <a class="nav-link mr-5 attock2" href="aboust.html">About Us</a>
+                      
+                    <li class="nav-item">
+                        <!-- <a class="nav-link mr-5 attock2" href="Main page.html">Main Page</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-5 attock2" href="contactus.html">Contact Us</a>
+                      </li>
+                  
+        </div>
+        </div>
+    </nav>
+    <br>
+    <!------navbar end----->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          
+            <li>
+                <img src="pic1/cc33.jpg" title="first img" height="300px" width="200px" />
+                
+            </li>
+            
+        </ul>
+    </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+         <h3 style="font-family: 'Anton', sans-serif; display: inline; color: #DCCB39; text-decoration: underline solid black;">PRICE:</h3> <h1 style="font-family: 'Anton', sans-serif; display: inline; text-decoration: underline solid #DCCB39; margin: 10px;">$10000</h1>
+         <br>
+         <br>
+  <p style="font-weight: bold; color: #DCCB39;"><b> <p>Homall Gaming Chair Office Chair High Back Computer Chair Leather Desk Chair Racing Executive Ergonomic Adjustable Swivel Task Chair with Headrest and Lumbar Support (White)</p>
+</p>
+<b>Furniture base movement	Swivel</b></h6> <h6><b>Room :- Type :-Gaming Chair</b></h6></h5>
+<b>Color :-	white</b></h6> <h6><b>Material :-	Leather</b></h6></h5>
+
+
+<h5 style="color: #DCCB39;"><b id="QTY">QTY</b>:<input style="width: 70px; margin: 5px; border-color: black;" type="number" name="" id="number"></h5>
+<button style="border-radius: 7%; height: 40px; width: 90px; color: brown; background-color: black;" onclick="show()">Bid</button>
+
+
+<h1>About this item</h1>
+
+<p>elected Material: High density shaping foam, more comfortable, elasticity resilience and service life. 1.8mm thick steel frame, more sturdy and stable. Pu Leather, skin friendly and wear resisting.
+    Upgraded Configuration: Class 3 gas lift, durable, reliable and supports up to 300lbs. Rubber casters, rolling quietly and tested by 1000 miles rolling.
+    Multi Function: 360 degree swivel and multi direction wheels, load capacity: 300-pound maximum weight capacity. Recline function. Between 90 to 180 degree. Rocking function: chair can rock back and forth when you adjust the knob beneath the seat.
+    Dimension: Size of back: 22.5 inch and 30.5 inch. Size of seat: 14.5 inch and 20.5 inch. Seat adjustable height: 17.3 to 21.5 inch.
+    Wide Usage: This gaming chair is suitable for you to play computer games, watch show, do the work and have a rest. It will make your space more modern and elegant.</p>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js/jqzoom.js"></script>
+<script type="text/javascript">
+$("#bzoom").zoom({
+  zoom_area_width: 300,
+    autoplay_interval :3000,
+    small_thumbs : 4,
+    autoplay : false
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+   $(document).ready(function(){
+     
+     $("#number").change(function(){
+      var price1=$("#price1").html();
+      var number=$("#number").val();
+      $("#price1").html(price1*number);
+     });
+     $("#hert1").click(function(){
+      $("#hert1").css("color", "red");
+     });
+     $("#add").click(function(){
+      $(this).addClass("active");
+     });
+    });
+
+    
+</script>
+<br>
+<br>
+
+</div>
+</div>
+<!-- Gallery -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+ <!------------FOOTER------------->
+
+<!--footer starts from here-->
+<footer class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Details</h5>
+<!--headin5_amrc-->
+<p class="mb10">Auction software made easy. Timed and Webcast Auctions on your website. Timed and Webcast Auctions on your website. Live Auctions. Custom Styling. Complete Web Analytics. Features: Multi-Lingual, Live Auctions, Custom Styling,</p>
+<p><i class="fa fa-location-arrow"></i> INFO</p>
+<p><i class="fa fa-phone"></i>  +91- (021) 36620102 </p>
+<p><i class="fa fa fa-envelope"></i> aptech@example.com</p>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<p class="text-center">Copyright @1995 | Designed With by <a href="#">APTECH NORTH NAZIMABAD</a></p>
+
+<ul class="social_footer_ul">
+<li><a href="https://play.google.com/store/apps/details?id=com.facebook.katana" ><i class= "fab fa-facebook"-></i></a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.twitter.android"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.instagram.android"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+        <script >
+        
+        function show(){
+alert('Item added for bid')
+
+        }
+        
+        </script>
+    </body>
+    
+    </html>
+
+
+
+
+

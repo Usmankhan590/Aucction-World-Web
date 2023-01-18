@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/06a786625d.js" crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!-------Angular js ------->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-------Angular file------->
+    <script src="angular.js"></script>
+    <!--------Googlr font--------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <title>Aucction Design</title>
+</head>
+
+<body>
+     <!------navbar----->
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">
+            <h4 class="attock2">Aucction World</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mr-5 attock2" href="Main page.html">HOME<span class="sr-only">(current)</span></a>
+              
+                <li class="nav-item">
+                    <!-- <a class="nav-link mr-5 attock2" href="shop.html">SHOP</a> -->
+                </li>
+                
+                <li class="nav-item dropdown menu-area">
+                    <a class="nav-link dropdown-toggle mr-5 attock2" href="#" id="mega-Two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                OUR CATEGORIES
+              </a>
+                    <div class="dropdown-menu mega-ares" aria-labelledby="mega-Two">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="container">
+                                        <div class="attock"> </div>
+                                        <img src="pic1/Q70.jpg" height="250px"  width="400px" 
+                                     class="card-img-top attock1" alt="...">
+                                   </div>
+                               </div>
+                               <div class="col-sm-6 col-lg-3">
+                                   <h5 style="color:#0c08ff;">FURNITURE</h5>
+                                   <a href="All chairs page.html" class="dropdown-item">CHAIRS</a>
+                                   <a href="All table page .html" class="dropdown-item">TABLES</a>
+                                   <a href="all sofa caterigor.html" class="dropdown-item">SOFAS</a>
+                               </div>
+                               <div class="col-sm-6 col-lg-3">
+                                   <h5 style="color:#0c08ff;">ELECTRONICS</h5>
+                                   <a href="All cpu page.html" class="dropdown-item">CPU</a>
+                                   <a href="all lcd page.html" class="dropdown-item">LCD</a>
+                                   <a href="laptops page.html" class="dropdown-item">LAPTOPS</a>
+                               </div>
+                               <div class="col-sm-6 col-lg-3">
+                                   <h5 style="color:#0c08ff;">HOME DECOR</h5>
+                                   <a href="all clocks page .html" class="dropdown-item">WALL CLOCK</a>
+                                   <a href="all pant page .html" class="dropdown-item">PAINTING</a>
+                                   <a href="all jumar page .html" class="dropdown-item">JHUMARS</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mr-5 attock2" href="aboust.html">ABOUT US</a>
+            
+                <li class="nav-item">
+                  <a class="nav-link mr-5 attock2" href="contactus.html">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                  
+          
+                <li class="nav-item">
+                    <a class="nav-link attock2" href="#"><i class="fas fa-shopping-basket"></i>(0)</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <!------navbar end----->
+    <!------carousel------>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pic1/interior-design-living-room.jpg" class="d-block w-100" height="400px" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Brand New Sofa for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pic1/Q9.jpg" class="d-block w-100" height="400px;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>brand New Laptops for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pic1/yy77.jpg" class="d-block w-100" height="400px;"  alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Brand New Table for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br>
+
+    <br>
+    <!------carousel End----->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="display: flex;justify-content: space-around;align-items: center;">
+                    <h1 style="display: flex;justify-content: space-around;align-items: center; font-family: 'Anton', sans-serif; color:#0c08ff; display: inline; margin-left: 420px; font-size: 40px;">EXELLENCE IS OUR MOTO</h1><h1 style="display: flex;justify-content: space-around;align-items: center; font-family: 'Anton', sans-serif; display: inline; margin-right: 420px;"></h1>
+                </div>
+            </div>
+            <div style="display: flex;justify-content: space-around;align-items: center;" class="col-md-12">  
+                <div style="border-bottom: 2px solid black; width: 120px; margin-left: 430px;"></div><div style="border-bottom: 2px solid yellow;width: 120px; margin-right: 430px;"></div></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                  <img src="pic1/Q0jpg.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="col-md-6">
+                <h4 style="font-family: 'Fascinate', cursive; color: black; text-decoration: underline;">PAINTING</h4>
+                  <p>This abstract modern oil black, red and white painting from Conrad Bloemers Needs to be framed. This artwork is on board. Beautiful combination of colors. Vertical panel art. This textured modern artwork belongs on your wall. It's absolutely stunning. Abstract expressionism of a scenery. This artwork gives you good feelings and ups your moods for the.. </p>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <h4 style="font-family: 'Fascinate', cursive; color: black; text-decoration: underline;">Lamp</h4>
+                  <p>Use, by you or one client, in a single end product which end users are not charged for. The total price includes the item price and a buyer fee.</p>
+            <b></b>      
+            </div>
+            <br>
+            <div class="col-md-6">
+                  <img  src="pic1/Q8.jpg" height="350px;" class="card-img-top" alt="...">
+
+
+
+
+
+                  <div style="display: flex;justify-content: space-around;align-items: center;" class="col-md-12">  
+                    <div style="border-bottom: 2px solid black; width: 120px; margin-left: 430px;"></div><div style="border-bottom: 2px solid yellow;width: 120px; margin-right: 430px;"></div></div>
+            </div>
+
+
+
+
+                  <div class="row">
+                    <div class="col-md-6">
+                          <img src="pic1/yy99.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 style="font-family: 'Fascinate', cursive; color: black; text-decoration: underline;">Clocks</h4>
+                          <p>Optional outputs include time code reader and generator (SMPTE, IRIG-B, IRIG-A, IRIG-E), PPO (programmable pulse output), 1PPS (pulse per second), 10 MHz sine wave input and output, and PTP (IEEE1588 Precision Time Protocol). Holdover accuracy and stability is maintained with a high-stability TCXO oscillator that can be upgraded to an OCXO or Rubidium oscillator to minimize timing drift.</p>
+                          
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <h4 style="font-family: 'Fascinate', cursive; color: black; text-decoration: underline;">Lcd</h4>
+                          <p>LED monitors are brighter, have more contrast, and shorter response times, while LCD monitors are significantly cheaper and are generally better at preventing burn-in. Preference can vary on play style and aesthetic; however, LED monitors are usually preferred for gaming. </p>
+                          
+                    </div>
+                    <div class="col-md-6">
+                          <img  src="pic1/yy9.jpg" height="350px;" class="card-img-top" alt="...">
+
+                        
+            </div>
+        </div>
+    </div>
+     <br>
+     <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="text-decoration: underline;"><b style="color: #DCCB39; display: flex;justify-content: space-around;align-items: center;">BRAND NEW</b><b style="display: flex;justify-content: space-around;align-items: center;">AUCTION PRODUCT</b></h1>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-12">
+            <div class="row">
+                <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/Q1.jpg" width="300px;" height="300px;" alt="">
+                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="All cpu page.html">ADD TO CART</a>
+                     </div>
+                 </div>
+             </div>
+                   <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/Q2.jpg" width="300px;" height="300px;" alt="">
+                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="All cpu page.html">ADD TO CART</a>
+                     </div>
+                 </div>
+             </div>
+             <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/Q33.jpg" width="300px;" height="300px;" alt="">
+                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="All cpu page.html">ADD TO CART</a>
+                     </div>
+                     </div>
+                </div>
+                 </div>
+                 <br>
+
+
+                 <div class="row">
+                <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/Q3.jpg" width="300px;" height="300px;" alt="">
+                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="">ADD TO CART</a>
+                     </div>
+                 </div>
+             </div>
+
+
+
+
+                   <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/Q4.jpg" width="300px;" height="300px;" alt="">
+                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                     </div>
+                 </div>
+             </div>
+             <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/t2.jpg" width="300px;" height="300px;" alt="">
+                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                     </div>
+                 </div>
+             </div>
+                 </div>
+                 <br>
+                 <div class="row">
+                   <div class=" col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="pic1/Q88.jpg" width="300px;" height="300px;" alt="">
+                        <div class="overlay">
+                            <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                         </div>
+
+
+
+
+                    </div>
+                </div>
+                      <div class=" col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="pic1/Q8.jpg" width="300px;" height="300px;" alt="">
+                        <div class="overlay">
+                            <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                         </div>
+                    </div>
+                </div>
+
+
+
+                <div class=" col-md-4 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="pic1/Q99.jpg" width="300px;" height="300px;" alt="">
+                        <div class="overlay">
+                            <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                         </div>
+                    </div>
+                </div>
+                    </div>
+                    <br>
+
+
+
+                 <div class="row">
+                <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/jj44.jpg" width="300px;" height="300px;" alt="">
+                      <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                     </div>
+                 </div>
+             </div>
+
+
+
+                   <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/jj33.jpg" width="300px;" height="300px;" alt="">
+                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class=" col-md-4 col-sm-6 col-xs-12">
+                 <div class="hovereffect">
+                     <img class="img-responsive" src="pic1/jj11.jpg" width="300px;" height="300px;" alt="">
+                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                     </div>
+                 </div>
+             </div>
+                 </div>
+            
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class=" col-md-4 col-sm-6 col-xs-12">
+                                 <div class="hovereffect">
+                                     <img class="img-responsive" src="pic1/oo22.jpg" width="300px;" height="300px;" alt="">
+                                     <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                     </div>
+                                 </div>
+                             </div>
+
+
+                                   <div class=" col-md-4 col-sm-6 col-xs-12">
+                                 <div class="hovereffect">
+                                     <img class="img-responsive" src="pic1/oo33.jpg" width="300px;" height="300px;" alt="">
+                                     <div class="overlay">
+                                        <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                                     </div>
+                                 </div>
+                             </div>
+
+
+                             <div class=" col-md-4 col-sm-6 col-xs-12">
+                                 <div class="hovereffect">
+                                     <img class="img-responsive" src="pic1/oo44.jpg" width="300px;" height="300px;" alt="">
+                                      <div class="overlay">
+                        <a style="margin-top: 130px;" class="info" href="#">ADD TO CART</a>
+                     </div>
+                                 </div>
+                             </div>
+                                 </div>
+                     </div>
+                 </div>
+             </div>
+                 </div>
+               </div>
+             </div>
+             
+
+    
+  </div>
+</div>
+<!-- Gallery -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+ <!------------FOOTER------------->
+
+<!--footer starts from here-->
+<footer class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Details</h5>
+<!--headin5_amrc-->
+<p class="mb10">Auction software made easy. Timed and Webcast Auctions on your website. Timed and Webcast Auctions on your website. Live Auctions. Custom Styling. Complete Web Analytics. Features: Multi-Lingual, Live Auctions, Custom Styling,</p>
+<p><i class="fa fa-location-arrow"></i> INFO</p>
+<p><i class="fa fa-phone"></i>  +91- (021) 36620102 </p>
+<p><i class="fa fa fa-envelope"></i> aptech@example.com</p>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<p class="text-center">Copyright @1995 | Designed With by <a href="#">APTECH NORTH NAZIMABAD</a></p>
+
+<ul class="social_footer_ul">
+<li><a href="https://play.google.com/store/apps/details?id=com.facebook.katana" ><i class= "fab fa-facebook"-></i></a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.twitter.android"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.instagram.android"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
